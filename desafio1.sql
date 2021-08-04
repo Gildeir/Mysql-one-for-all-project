@@ -65,8 +65,7 @@ INSERT INTO `plano` (`tipo_de_plano`, `valor_plano`)
 VALUES
 ('gratuito', 0),
 ('familiar', '7.99'),
-('universitario', '5.99'),
-('gratuito', '0');
+('universitario', '5.99');
 
 INSERT INTO `usuario` (`name`, `idade`, `plano_id`)
 VALUES
