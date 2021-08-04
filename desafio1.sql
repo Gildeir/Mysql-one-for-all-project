@@ -8,8 +8,7 @@ CREATE TABLE `plano` (
 `plano_id` INT NOT NULL AUTO_INCREMENT,
 `tipo_de_plano` VARCHAR(45) NOT NULL,
 `valor_plano` DOUBLE NULL,
-PRIMARY KEY (`plano_id`),
-FOREIGN KEY (`plano_id`) REFERENCES `plano` (`plano_id`)
+PRIMARY KEY (`plano_id`)
 ) engine = InnoDB;
   
 CREATE TABLE `usuario` (
@@ -17,7 +16,8 @@ CREATE TABLE `usuario` (
 `name` VARCHAR(100) NOT NULL,
 `idade` INT NOT NULL,
 `plano_id` INT NOT NULL,
-PRIMARY KEY (`usuario_id`)
+PRIMARY KEY (`usuario_id`),
+FOREIGN KEY (`plano_id`) REFERENCES `plano` (`plano_id`)
 ) engine = InnoDB;
   
 CREATE TABLE `artista` (
@@ -27,7 +27,7 @@ PRIMARY KEY (`artista_id`)
 ) engine = InnoDB;
 
 
-CREATE TABLE `seguindo_artista` (
+CREATE TABLE `seguindo_artistas` (
 `usuario_id` INT NOT NULL,
 `artista_id` INT NOT NULL,
 FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`usuario_id`),
@@ -58,7 +58,7 @@ CREATE TABLE `historico_de_reproducoes` (
 `album_id` INT NOT NULL,
 FOREIGN KEY (`usuario_id`) REFERENCES `usuario` (`usuario_id`),
 FOREIGN KEY (`song_id`) REFERENCES `songs` (`song_id`),
-CONSTRAINT PRIMARY KEY(`usuario_id`, `artista_id`)
+CONSTRAINT PRIMARY KEY(`usuario_id`, `song_id`)
 ) engine = InnoDB;
   
 INSERT INTO `plano` (`tipo_de_plano`, `valor_plano`)
