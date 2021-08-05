@@ -102,24 +102,24 @@ VALUES
 
 INSERT INTO `songs` (`album_id`, `song_name`)
 VALUES
-  (1, 'Soul For Us' ),
-  (1, 'Reflections Of Magic'),
-  (1, 'Dance With her Own'),
-  (2, 'Troubles Of My Inner Fire'),
-  (2, 'Time Fireworks'),
-  (3, 'Magic Circus'),
-  (3, 'Honey, So Do I'),
-  (3, 'Sweetie Lets Go Wild'),
-  (3, 'She Knows'),
-  (4, 'Fantasy For Me'),
-  (4, 'Celebration Of More'),
-  (4, 'Rock His Everything'),
-  (4, 'Home Forever'),
-  (4, 'Diamond Power'),
-  (4, 'Honey, Lets Be Silly'),
-  (5, 'Thang Of Thunder'),
-  (5, 'Words Of Her Life'),
-  (5, 'Without My Streets');
+  (1, "Soul For Us"),
+  (1, "Reflections Of Magic"),
+  (1, "Dance With Her Own"),
+  (2, "Troubles Of My Inner Fire"),
+  (2, "Time Fireworks"),
+  (3, "Magic Circus"),
+  (3, "Honey, So Do I"),
+  (3, "Sweetie, Let's Go Wild"),
+  (3, "She Knows"),
+  (4, "Fantasy For Me"),
+  (4, "Celebration Of More"),
+  (4, "Rock His Everything"),
+  (4, "Home Forever"),
+  (4, "Diamond Power"),
+  (4, "Honey, Let's Be Silly"),
+  (5, "Thang Of Thunder"),
+  (5, "Words Of Her Life"),
+  (5, "Without My Streets");
   
 INSERT INTO `historico_de_reproducoes` (`usuario_id`, `song_id`, `album_id`)
 VALUES
