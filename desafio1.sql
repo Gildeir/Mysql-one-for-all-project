@@ -97,7 +97,7 @@ VALUES
 (1, 'Envious' ),
 (1, 'Exuberant'),
 (2, 'Hallowed Steam'),
-(3, 'Incandenscent'),
+(3, 'Incandescent'),
 (4, 'Temporary Culture');
 
 INSERT INTO `songs` (`album_id`, `song_name`)
