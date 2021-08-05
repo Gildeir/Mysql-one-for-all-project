@@ -63,9 +63,9 @@ CONSTRAINT PRIMARY KEY(`usuario_id`, `song_id`)
   
 INSERT INTO `plano` (`tipo_de_plano`, `valor_plano`)
 VALUES
-('gratuito', 0),
-('familiar', '7.99'),
-('universitario', '5.99');
+('gratuito', 0.00),
+('familiar', 7.99),
+('universitario', 5.99);
 
 INSERT INTO `usuario` (`name`, `idade`, `plano_id`)
 VALUES
@@ -97,7 +97,7 @@ VALUES
 (1, 'Envious' ),
 (1, 'Exuberant'),
 (2, 'Hallowed Steam'),
-(3, 'Incadenscent'),
+(3, 'Incandenscent'),
 (4, 'Temporary Culture');
 
 INSERT INTO `songs` (`album_id`, `song_name`)
