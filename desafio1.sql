@@ -7,7 +7,7 @@ USE SpotifyClone;
 CREATE TABLE `plano` (
 `plano_id` INT NOT NULL AUTO_INCREMENT,
 `tipo_de_plano` VARCHAR(45) NOT NULL,
-`valor_plano` DOUBLE NULL,
+`valor_plano` DECIMAL(5,2) NOT NULL,
 PRIMARY KEY (`plano_id`)
 ) engine = InnoDB;
   
@@ -63,7 +63,7 @@ CONSTRAINT PRIMARY KEY(`usuario_id`, `song_id`)
   
 INSERT INTO `plano` (`tipo_de_plano`, `valor_plano`)
 VALUES
-('gratuito', 0.00),
+('gratuito', 0),
 ('familiar', 7.99),
 ('universitario', 5.99);
 
